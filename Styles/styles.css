@@ -1,0 +1,923 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #f8f8f8; /* Light background for contrast with white theme */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Center the content */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem; /* Increased margin for better spacing */
+}
+
+.nav-links a {
+    color: #333; /* Dark color for text */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+    color: #0dc795; /* Change color on hover */
+}
+
+.logo img {
+    max-width: 40px; /* Adjust logo width for better proportion */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo h3 {
+    margin-left: 10px; /* Space between the logo and text */
+    font-size: 1.5rem; /* Adjust font size */
+    color: #044b38; /* Dark color for logo text */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start; /* Align links to the left on smaller screens */
+    }
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+
+
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Dark color for text */
+    background-color: #fff; /* White background */
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 2rem; /* Add some padding */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #5a0d00; /* Subheading color */
+    margin-top: 0.5rem; /* Space between heading and subheading */
+}
+
+
+
+.hero-content {
+    max-width: 800px; /* Increased max width to allow more space */
+    position: relative;
+    width: 100%; /* Changed to 100% for full width */
+    overflow: hidden; /* Hide overflow to avoid clipping */
+}
+
+.hero-image {
+    width: 50%; /* Adjusted to create balance */
+}
+
+.cta-button {
+    background-color: #ff6347; /* Tomato color */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Animation for heading */
+.animated-heading {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    color: #ff6347; /* Change color for the heading */
+    overflow: hidden; /* Ensures that the text is clipped */
+    white-space: nowrap; /* Prevents wrapping */
+    border-right: .15em solid #ff6347; /* Cursor effect */
+    animation: typing 12s steps(34, end) infinite alternate, blink-caret .75s step-end infinite; /* Slowed down typing effect */
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    0% {
+        width: 0; /* Start from 0 width */
+    }
+    15% {
+        width: 100%; /* Full width */
+    }
+    85% {
+        width: 100%; /* Keep full width */
+    }
+    100% {
+        width: 0; /* Start erasing */
+    }
+}
+
+/* Keyframes for blinking cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Hide caret */
+    }
+    50% {
+        border-color: #ff6347; /* Show caret */
+    }
+}
+
+
+
+/* How to Use Section */
+.how-to-use {
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.how-to-use h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6347;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #761200;
+    margin-bottom: 2rem; /* Space below the description */
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-card {
+    width: 22%;
+    background-color: transparent;
+    padding: 0;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: none; /* No shadow for blending effect */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.step-card img {
+    width: 100%;           /* Full width of the card */
+    height: 200px;        /* Fixed height to maintain uniformity */
+    object-fit: cover;    /* Cover ensures the image fills the space */
+    margin-bottom: 0;     /* Remove bottom margin to avoid extra spacing */
+    filter: grayscale(100%); /* Grayscale filter for inactive state */
+    transition: all 0.3s ease;
+}
+
+.step-card .step-number {
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.step-card h3 {
+    font-size: 1.2rem;     /* Increased font size for heading */
+    margin: 0.5rem 0;     /* Space above and below the heading */
+}
+
+/* Active and Inactive State Styling */
+.step-card.active img {
+    filter: none;          /* Display the image in color when active */
+}
+
+.step-card.active .step-number {
+    background-color: #ff6347; /* Change background color when active */
+}
+
+.step-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .step-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-card {
+        width: 90%;
+    }
+}
+
+
+/* Features Section */
+.product-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-color: white; /* Matches your white theme */
+    padding: 0 4rem; /* Ensures some padding on the sides */
+}
+
+/* Flex container */
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1200px;
+    gap: 4rem; /* Space between image and text */
+}
+
+/* Image Styling */
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Features List */
+.features-list {
+    flex: 1;
+    padding: 0 2rem; /* Some padding on the left and right */
+    background-color: transparent; /* No background color */
+}
+
+/* Individual Feature Item Styling */
+.feature-item {
+    margin-bottom: 1.5rem;
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    color: #691102; /* Slightly dark text for contrast */
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #555; /* Medium dark text */
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .product-image {
+        max-width: 100%; /* Image will scale down */
+        margin-bottom: 2rem;
+    }
+
+    .features-list {
+        padding-left: 0;
+    }
+}
+
+
+
+/* User Experience Section */
+.user-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-color: #f9f9f9;
+    padding: 0 4rem;
+}
+
+/* Flex Container */
+.experience-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 4rem;
+}
+
+/* Screen Content Styling */
+.screen-content {
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 0.1s ease; /* Quick, smooth animation */
+}
+
+/* Image inside screen content */
+.screen-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease; /* Smooth transition */
+}
+
+/* Description Styling */
+.experience-description {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.experience-description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #691102;
+}
+
+.experience-description p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .screen-content {
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .experience-description {
+        padding-left: 0;
+    }
+}
+
+
+/* Services Section */
+.services-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headings */
+.services-heading {
+    font-size: 2.5rem;
+    color: #ff6347;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services-subheading {
+    font-size: 1.5rem;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Cards Container */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Card Styling */
+.service-card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Front and Back of Card */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+
+/* Front Card Style */
+.card-front {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border:rgb(98, 41, 41) ;
+    border: #5a0d00;
+}
+
+.card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    border: #5a0d00;
+}
+
+.card-front h4 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    text-align: center;
+    white-space: nowrap; /* Keep text on one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-front p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Back Card Style */
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(241, 238, 238, 0.9);
+}
+
+.service-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.service-card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Back Card Content */
+.card-back h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #343a40;
+    text-align: center;
+}
+
+.card-back ul {
+    padding-left: 20px;
+    list-style: none;
+    color: #6c757d;
+}
+
+.card-back li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .service-card {
+        width: 45%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+
+
+/* Retailer Experience Section */
+.retailer-experience-section {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding around the section */
+    background-color: #f8f9fa; /* Light background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+/* Section Heading */
+.retailer-experience-heading {
+    font-size: 2rem; /* Reduced heading size */
+    color: #343a40; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Cards Container */
+.retailer-cards {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards onto next line */
+    justify-content: center; /* Center the cards */
+    width: 100%; /* Full width */
+}
+
+/* Card Styling */
+.retailer-card {
+    flex: 0 1 calc(45% - 20px); /* Adjusted to be smaller */
+    margin: 10px; /* Margin between cards */
+    background-color: #fff; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Card Content */
+.card-content {
+    display: flex; /* Flexbox for image and text */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Inner padding */
+}
+
+/* Card Image */
+.retailer-card-image {
+    width: 30%; /* Image takes 30% of the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+/* Card Description */
+.retailer-card-description {
+    margin-left: 15px; /* Space between image and text */
+    width: 70%; /* Remaining width for description */
+}
+
+.retailer-card-description h3 {
+    font-size: 1.2rem; /* Reduced title size */
+    margin: 0; /* Remove margin */
+}
+
+.retailer-card-description p {
+    font-size: 0.9rem; /* Reduced description text size */
+    color: #6c757d; /* Light text color */
+    margin-top: 5px; /* Space above description */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .retailer-card {
+        flex: 0 1 calc(100% - 20px); /* Full width on small screens */
+    }
+
+    .retailer-experience-heading {
+        font-size: 1.5rem; /* Smaller heading size on mobile */
+    }
+
+    .retailer-card-image {
+        width: 40%; /* Adjusted image width on mobile */
+    }
+
+    .retailer-card-description h3 {
+        font-size: 1rem; /* Adjusted title size on mobile */
+    }
+
+    .retailer-card-description p {
+        font-size: 0.8rem; /* Adjusted description size on mobile */
+    }
+}
+
+/* Customer Review Section */
+.customer-review-section {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding around the section */
+    background-color: #e9ecef; /* Light background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Heading and Subheading */
+.customer-review-heading {
+    font-size: 2.5rem; /* Larger heading size */
+    margin-bottom: 10px; /* Margin below the heading */
+    text-align: center; /* Centered text */
+    color: #ff6347;
+}
+
+.customer-review-subheading {
+    font-size: 1.5rem; /* Subheading size */
+    margin-bottom: 20px; /* Margin below the subheading */
+    text-align: center; /* Centered text */
+    color:#71291c
+}
+
+/* Reviews Container */
+.customer-reviews {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards onto next line */
+    justify-content: center; /* Center the cards */
+    width: 100%; /* Full width */
+}
+
+/* Card Styling */
+.customer-review-card {
+    flex: 0 1 calc(45% - 20px); /* Card takes 45% width */
+    margin: 10px; /* Margin between cards */
+    background-color: #fff; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 20px; /* Inner padding */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+    height: 250px; /* Set card height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customer-review-card {
+        flex: 0 1 calc(100% - 20px); /* Full width on small screens */
+    }
+
+    .customer-review-heading {
+        font-size: 2rem; /* Smaller heading size on mobile */
+    }
+
+    .customer-review-subheading {
+        font-size: 1.2rem; /* Smaller subheading size on mobile */
+      
+    }
+
+    .review-description {
+        font-size: 0.9rem; /* Adjusted description size on mobile */
+    }
+
+    .reviewer-name {
+        font-size: 1rem; /* Adjusted name size on mobile */
+    }
+
+    .reviewer-role {
+        font-size: 0.8rem; /* Adjusted role size on mobile */
+    }
+}
+
+
+/* Getting Started Section */
+.getting-started-section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center all content vertically */
+}
+
+/* Heading Styles */
+.getting-started-heading {
+    font-size: 2.5rem;
+    margin-top: 80px;
+    text-align: center;
+    color: #ff6347;
+
+    font-size: 4rem; 
+    text-align: center; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+/* Cards Container */
+.getting-started-cards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Ensure cards take the remaining space */
+
+}
+
+/* Cards Container */
+.getting-started-cards {
+    margin-top: 120px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 0px;
+}
+
+/* Card Styles */
+.getting-started-card {
+    position: relative;
+    width: 350px; /* Increased width */
+    height: 250px; /* Increased height */
+    margin: 10px;
+    perspective: 1000px; /* Important for 3D effect */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-front-gettingstarted, .card-back-gettingstarted {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+/* Front Card Styles */
+.card-front-gettingstarted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 430px;
+    width: 410px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(132deg, #d66551, #fff) border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.08);
+    padding: 0px 25px 35px;
+}
+.card-front-gettingstarted h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 20px;
+   
+
+}
+
+/* Back Card Styles */
+.card-back-gettingstarted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EDEDED;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    min-height: 430px;
+    width: 410px;
+    padding: 35px;
+    transform: rotateY(180deg);
+    text-align: left;
+}
+
+/* Hover Effect for Card Flip */
+.getting-started-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.card-back-gettingstarted h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+/* Section to take full height and width */
+.launch-product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color: #f7f7f7; /* Background color for the section */
+    padding: 20px;
+}
+
+/* Launch Product Heading */
+.launch-product-heading {
+    font-size: 4rem; /* Larger heading size */
+    margin-bottom: 40px; /* Space below the heading */
+    text-align: center; /* Center align text */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+/* Button Styles similar to the one you inspected */
+.launch-button {
+    width: 622px; /* Similar width */
+    height: 127px; /* Similar height */
+    font-size: 70px; /* Large font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(79.44deg, #D8A8FE 27.81%, #ff6347 86.82%); /* Beautiful gradient */
+    border: 1px solid #ECECEC; /* Border color */
+    box-shadow: 0px 37px 43px rgba(0, 0, 0, 0.12); /* Shadow effect */
+    border-radius: 95px; /* Rounded corners */
+    margin: 50px auto; /* Centered with margin */
+    color: white; /* Button text color */
+    transition: all ease-in-out 0.3s; /* Smooth transition */
+    transform: scale(1); /* Default scale */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Hover effect */
+.launch-button:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    box-shadow: 0px 47px 53px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transition: all ease-in-out 0.3s; /* Smooth transition on hover */
+}
+
+
+/* Footer Styles */
+.footer {
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around footer */
+    background-color: #f7f7f7; /* Light background */
+    text-align: center; /* Center align text */
+}
+
+
+/* Footer Links */
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Styles/contact.css"> <!-- Assuming you have a global stylesheet -->
+</head>
+<body>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form class="contact-form" action="/submit-form" method="POST">
+                <!-- Your Name Field (Required) -->
+                <label for="name">Your Name<span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- Email Field (Required) -->
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <!-- Country Field -->
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country">
+
+                <!-- Phone Number Field -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <!-- Comment Field -->
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
