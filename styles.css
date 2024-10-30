@@ -1,0 +1,858 @@
+body {
+    background-color: #E0F8F2; /* Background color */
+   
+}
+.left-content{
+    text-align: left;
+}
+.text-container {
+    margin-top: 100px;
+    text-align: left;
+    padding-left: 75px;
+}
+
+.whitespace {
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 96px;
+}
+
+.highlited {
+    font-family: 'Covered By Your Grace', cursive;
+    color:#009387;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 96px;
+}
+
+.description {
+    width: 553.97px; /* Width set karein */
+    height: 102px; /* Height set karein */
+    opacity: 0.8; /* Opacity */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: left; /* Center align kare */
+    color: #58595D; /* Text color */
+    margin-top: 20px; /* Top margin for spacing */
+    padding-left: 75px;
+}
+
+.demo-button {
+    width: 242.05px; /* Button width */
+    height: 64px; /* Button height */
+    padding: 22px 66.05px; /* Padding */
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #2E2F35; /* Border */
+    background: #FF6D2C; /* Background color */
+    color: white; /* Text color */
+    font-size: 13px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 20px;
+    letter-spacing: 1.2000000476837158px;
+    cursor: pointer; /* Pointer on hover */
+    box-shadow: 3px 3px 0px 0px #373840; /* Shadow */
+    margin-top: 20px; /* Top margin for spacing */
+    opacity: 0.8; /* Opacity */
+    transition: opacity 0.3s; /* Transition for opacity */
+    font-family: Inter;
+    margin-bottom: 100px;
+    margin-left: 75px;
+}
+
+.demo-button:hover {
+    opacity: 1; /* Hover effect */
+}
+
+.customer-satisfaction-section {
+    background-color: white; /* Background color */
+    font-size: 65px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.customer-satisfaction {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 65px;
+    color: #009387;
+    font-weight: 400;
+    line-height: 76px;
+    text-align: center;
+}
+
+.customer-satisfaction-description {
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 34px; /* Line height */
+    color: #58595D; /* Text color */
+    text-align: center; /* Center align kare */
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+
+}
+.brand-logos {
+    display: flex; /* Flex layout for logos */
+    justify-content: center; /* Center logos */
+    margin-top: 20px; /* Top margin for spacing */
+    padding-top: 50px;
+}
+
+.brand-logo {
+    margin: 40px; /* Space between logos */
+    text-align: center; /* Center align caption */
+    transition: transform 0.3s; /* Transition for animation */
+}
+
+.brand-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Style for brand logos */
+.brand-logo img {
+    height: 180px; /* Set brand logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Style for caption images */
+.brand-logo img.caption {
+    height: 25px; /* Set caption image height */
+    width: auto; /* Maintain aspect ratio */
+    margin-top: 5px; /* Space between brand logo and caption */
+}
+.results-section {
+    margin: 40px 0; /* Spacing above and below the section */
+    text-align: center; /* Center align text */
+}
+
+.results-section {
+    margin: 40px 0; /* Spacing above and below the section */
+    text-align: center; /* Center align text */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Move down */
+    animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Original position */
+    }
+}
+
+.results-section .whitespace {
+    font-family: 'Inter', sans-serif;
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -2px;
+}
+
+.results-section .drive {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: -2px;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.results-section .drive:hover {
+    color: #009387; /* Change color on hover */
+}
+
+.results-content {
+    display: flex; /* Flex layout for image and points */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    margin-top: 20px; /* Space above content */
+}
+
+.result-image {
+    width: 150px; /* Adjust the image width as needed */
+    height: auto; /* Maintain aspect ratio */
+   
+    transition: transform 0.3s; /* Animation on hover */
+
+}
+
+.result-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.left-points, .right-points {
+    display: flex; /* Flex layout for each side */
+    flex-direction: column; /* Arrange points vertically */
+    align-items: stretch; 
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+
+.point {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 22px; /* Adjust line height as needed */
+    margin: 10px; /* Space between points */
+    transition: transform 0.3s; /* Animation on hover */
+    padding: 50px;
+}
+
+.point:hover {
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+.grey-colour-text {
+    font-size: 20px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 34px; /* Line height */
+    color: #58595D; /* Text color */
+    text-align: center; /* Center align kare */
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+
+}
+
+.postcard-section {
+    background-color: #FDF3EA; /* Background color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center align text */
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeIn 0.8s forwards; /* Fade-in animation */
+    margin-bottom: 100px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.operations-title{
+    padding-left: 75px;
+    padding-top: 50px;
+}
+
+.operations-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Description font size */
+    font-weight: 600px;
+    color: #58595D;
+    line-height: 34px; /* Line height for readability */
+    transition: transform 0.3s; /* Transition for transform effect */
+}
+
+
+
+.insights-section {
+    display: flex; /* Flex layout for image and content */
+    align-items: center; /* Center align items vertically */
+    margin-top: 40px; /* Space above the section */
+    background-color: #FDF3EA; /* Background color for contrast */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    opacity: 1; /* Initially hidden for animation */
+    animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.insights-image {
+    width: 581px; /* Adjust image width as needed */
+    height:581px; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    transition: transform 0.3s; /* Animation on hover */
+    padding-right: 50px;
+    
+}
+
+.insights-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.insights-content {
+    text-align: left; /* Align text to the left */
+}
+
+.insights-title {
+    margin-bottom: 10px; /* Space below the title */
+    transition: color 0.3s; /* Transition for color change */
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 96px;
+}
+
+.insights-title:hover {
+    color: #FF6D2C; /* Change color on hover */
+}
+
+.insights-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Description font size */
+    font-weight: 600px;
+    color: #58595D;
+    line-height: 34px; /* Line height for readability */
+    transition: transform 0.3s; /* Transition for transform effect */
+}
+
+.insights-description:hover {
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+
+.insights-image {
+    width: 581px; /* Adjust image width as needed */
+    height:581px; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    transition: transform 0.3s; /* Animation on hover */
+    padding-right: 50px;
+    
+}
+
+.insights-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.insights-content {
+    text-align: left; /* Align text to the left */
+}
+
+.insights-title {
+    margin-bottom: 10px; /* Space below the title */
+    transition: color 0.3s; /* Transition for color change */
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 96px;
+}
+
+.insights-title:hover {
+    color: #FF6D2C; /* Change color on hover */
+}
+
+.insights-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; /* Description font size */
+    font-weight: 600px;
+    color: #58595D;
+    line-height: 34px; /* Line height for readability */
+    transition: transform 0.3s; /* Transition for transform effect */
+}
+
+.insights-description:hover {
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #FDF3EA;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px; /* Image aur text ke beech thoda space */
+}
+
+.section-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.image-content img {
+   
+width: 594px;
+height: 594px;
+top: 1845.91px;
+left: 696px;
+gap: 0px;
+border-radius: 15px;
+opacity: 0px;
+
+}
+
+
+.gallery-section {
+    padding: 40px;
+    background-color: #FDF3EA
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-item img {
+    height: 210px;
+    width: 199px;
+    border-radius: 8px;
+}
+
+.item-title {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    
+}
+
+
+
+.item-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-title{
+    font-family: Inter;
+font-size: 64px;
+font-weight: 700;
+line-height: 76px;
+letter-spacing: -2px;
+text-align: center;
+margin-bottom: 100px;
+
+}
+
+.expert-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.expert-container {
+    flex: 1;
+    width: 100%;
+}
+
+.expert-item {
+    margin-bottom: 20px;
+}
+
+.expert-title {
+    font-size: 20px;
+    cursor: pointer;
+    color: black; /* Link color */
+    transition: color 0.3s;
+}
+
+.newhighlight{
+    font-family: 'Covered By Your Grace', cursive;
+    color:#009387;
+}
+.expert-title:hover {
+    color: #009387; /* Darker color on hover */
+}
+
+.expert-description {
+    margin-top: 10px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0; /* Initially collapsed */
+    opacity: 0; /* Initially hidden */
+}
+
+.expert-description.visible {
+    max-height: 100px; /* Adjust based on content */
+    opacity: 1; /* Show on toggle */
+}
+
+.expert-image {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.expert-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-title{
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tweets-section {
+    padding: 50px;
+    background-color: white; /* Light background for contrast */
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+}
+
+.tweets-title {
+    font-size: 63px;
+    font-family: Inter;
+    font-weight: 400px;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block; /* For the fire effect */
+}
+
+.fire-emoji {
+    animation: flame 1s infinite; /* Flame animation */
+}
+
+@keyframes flame {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.tweets-container {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.tweets-wrapper {
+    display: inline-block;
+    animation: slide 10s linear infinite; /* Slide effect */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move left */
+    }
+}
+
+.tweet-card {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: inline-block; /* Cards in a single line */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for uniformity */
+    margin-right: 20px; /* Space between tweets */
+    transition: transform 0.3s; /* Hover effect */
+}
+
+.tweet-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space below header */
+}
+
+.profile-img {
+    width: 30px; /* Profile image size */
+    height: 30px;
+    border-radius: 50%; /* Circular profile image */
+    margin-right: 10px; /* Space between image and icon */
+}
+
+.fab.fa-twitter {
+    color: #1DA1F2; /* Twitter blue color */
+    font-size: 24px; /* Twitter icon size */
+}
+
+.demo-button {
+    margin-top: 20px; /* Space above button */
+    width: 315px; /* Fixed width */
+    height: 64px; /* Fixed height */
+    padding: 22px 66px; /* Padding */
+    border-radius: 15px; /* Border radius */
+    border: 2px solid #2E2F35; /* Border */
+    background-color: #FF6D2C; /* Background color */
+    color: white; /* Text color */
+    box-shadow: 3px 3px 0px 0px #2E2F35; /* Box shadow */
+    cursor: pointer; /* Pointer on hover */
+    transition: opacity 0.3s, transform 0.3s; /* Transitions */
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-right: 50px;
+    
+}
+
+.demo-button:hover {
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.campaign-section {
+    background: #EEECFF; /* Background color */
+    padding: 40px;
+    text-align: right; /* Align text to the right */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.campaign-title {
+font-family: Inter;
+font-size: 63px;
+font-weight: 700;
+line-height: 76px;
+letter-spacing: -2px;
+text-align: left;
+
+}
+
+.campaign-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.campaign-points {
+    display: flex;
+    justify-content: flex-end; /* Align points to the right */
+    gap: 40px; /* Space between points */
+    margin-bottom: 30px; /* Space below points */
+}
+
+.newpoint {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.newpoint:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.newpoint-caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.case-study-button {
+    width: 232px; /* Fixed width */
+    height: 64px; /* Fixed height */
+    padding: 22px 42px; /* Padding */
+    border-radius: 15px; /* Border radius */
+    border: 2px solid #2E2F35; /* Border */
+    background: #FFFFFF; /* Background color */
+    color: #2E2F35; /* Text color */
+    box-shadow: 3px 3px 0px 0px #2E2F35; /* Box shadow */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: opacity 0.3s, transform 0.3s; /* Transition effects */
+    margin-top: 20px; /* Space above button */
+    margin-right: 100px;
+}
+
+.case-study-button:hover {
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.postpilot-section {
+    text-align: center; /* Center align text */
+    padding: 40px;
+    background:#FF6D2C; /* Light background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.postpilot-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Inter;
+font-size: 81px;
+font-weight: 700;
+line-height: 96px;
+
+}
+
+.postpilot-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button and rating */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between button and rating */
+}
+
+.get-started-button {
+    padding: 12px 24px; /* Padding for button */
+    background: white; /* Button color */
+    color: rgb(0, 0, 0); /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s; /* Transition for hover effect */
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.2000000476837158px;
+    text-align: center;
+
+}
+
+.get-started-button:hover {
+    background: #e05a24; /* Darker shade on hover */
+}
+
+.rating {
+    display: flex;
+    flex-direction: column; /* Stack the rating elements vertically */
+    align-items: center; /* Center align */
+}
+
+.stars {
+    font-size: 24px; /* Font size for stars */
+}
+
+.rating-text {
+    font-size: 18px; /* Font size for rating text */
+    margin-top: 5px; /* Space above text */
+}
+
+.searchin-rating {
+    font-size: 14px; /* Font size for SearchIn rating */
+    color: white; /* Gray color for text */
+}
+
+
+.newcaption {
+    font-size: 16px; /* Font size for caption */
+    color: white; /* Caption color */
+    margin-top: 20px; /* Space above caption */
+    font-family: Inter; /* Italic style for emphasis */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.newcaption:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.trends-section {
+    padding: 40px; /* Padding for section */
+    text-align: center; /* Center align text */
+    background: white; /* Light background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.trends-title {
+    font-family: 'Inter', sans-serif; /* Font family */
+    font-size: 68px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 76px; /* Line height */
+    letter-spacing: -2px; /* Letter spacing */
+    color: #333; /* Title color */
+    margin-bottom: 100px; /* Space below title */
+}
+
+.images-container {
+    display: flex; /* Flexbox for image alignment */
+    justify-content: center; /* Center align images */
+    gap: 20px; /* Space between images */
+}
+
+.trend-image {
+    width: 410px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0px 0px; /* Rounded corners for images */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Shadow for images */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.trend-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+
+.company-description {
+    font-size: 14px; /* Font size for description */
+    color: #555; /* Description color */
+    text-align: left; /* Center align description */
+    margin-top: 5px; /* Space above description */
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 80px;
+
+}
+
+.company-logo{ 
+        display: flex;   
+        width: 75px; /* Fixed width for company logo */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px; /* Space above logo */
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+
