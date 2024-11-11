@@ -11,6 +11,76 @@ body {
     padding-left: 75px;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-left: 10px; 
+    font-family: Arial, sans-serif;
+    color:#2E2F35;
+}
+
+
+.logo-container img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    /* gap: 10px; */
+}
+
+.header-button {
+    width: auto; /* Adjusted to fit content */
+    height: 50px; /* Reduced height for alignment */
+    padding: 10px 20px; /* Reduced padding for a more compact look */
+    border-radius: 15px;
+    border: 2px solid #2E2F35;
+    background: #FF6D2C;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0px #373840;
+    margin: 0 10px; /* Reduced side margins for better alignment in header */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    font-family: Inter, sans-serif;
+}
+
+.header-contact-button{
+    background: #FFFFFF;
+    color: #2E2F35;
+}
+
+
+
+
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+
 .whitespace {
     font-family: 'Inter', sans-serif;
     font-size: 70px;
@@ -98,6 +168,10 @@ body {
     padding-top: 40px;
 
 }
+
+
+
+
 .brand-logos {
     display: flex; /* Flex layout for logos */
     justify-content: center; /* Center logos */
@@ -165,8 +239,12 @@ body {
     transition: color 0.3s; /* Transition for color change */
 }
 
-.results-section .drive:hover {
+.results-section .drive{
     color: #009387; /* Change color on hover */
+}
+
+.effortless{
+    color: #009387;
 }
 
 .results-content {
@@ -237,6 +315,10 @@ body {
     margin-bottom: 100px;
 }
 
+.postcard-section-header{
+    margin:0 20px;
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1; /* Fully visible */
@@ -248,6 +330,21 @@ body {
     padding-top: 50px;
 }
 
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: left; /* Ensure text aligns to the left */
+    margin-right: auto; /* Pushes text to the far left */
+}
+
 .operations-description {
     font-family: 'Inter', sans-serif;
     font-size: 20px; /* Description font size */
@@ -256,6 +353,18 @@ body {
     line-height: 34px; /* Line height for readability */
     transition: transform 0.3s; /* Transition for transform effect */
 }
+
+.operation-image img {
+   
+    width: 600px;
+    height: 594px;
+    top: 1845.91px;
+    left: 696px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    
+    }
 
 
 
@@ -380,9 +489,12 @@ body {
     margin: 0;
 }
 
-.section-description {
-    font-size: 16px;
+.section-descritpion{
+    font-size: 25px;
     color: #555;
+    font-weight: 500;
+    size: 20px;
+    line-height: 34px;
 }
 
 .image-content img {
@@ -411,12 +523,13 @@ opacity: 0px;
 
 .gallery-item {
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     padding: 20px;
+    width: 400px;
+    border-radius: 13px;
 }
 
 .gallery-item img {
@@ -426,15 +539,24 @@ opacity: 0px;
 }
 
 .item-title {
+    font-family: Inter;
     font-size: 18px;
     margin: 10px 0 5px;
+    font-weight:700;
+    font-size: 25px;
+    line-height: 36px;
+    align-items: center;
     
 }
 
 
 
 .item-description {
+    font-family: Inter;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 30px;
+    align-items: center;
     color: #666;
 }
 
@@ -479,6 +601,10 @@ margin-bottom: 100px;
 
 .newhighlight{
     font-family: 'Covered By Your Grace', cursive;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 100px;
+    align-items: center;
     color:#009387;
 }
 .expert-title:hover {
@@ -633,12 +759,33 @@ margin-bottom: 100px;
     transform: translateY(-2px); /* Lift effect on hover */
 }
 
+.campaign-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .campaign-section {
     background: #EEECFF; /* Background color */
     padding: 40px;
     text-align: right; /* Align text to the right */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.campaign-div{
+    width: 80%;
+    margin-left: 215px;    
+}
+
+.campaign-image-div img{
+/* width:400px; */
+height: 594px;
+border-radius: 15px;
+opacity: 0px;
+
 }
 
 @keyframes fadeIn {
@@ -705,7 +852,8 @@ text-align: left;
     cursor: pointer; /* Pointer on hover */
     transition: opacity 0.3s, transform 0.3s; /* Transition effects */
     margin-top: 20px; /* Space above button */
-    margin-right: 100px;
+    margin-right: 260px;
+
 }
 
 .case-study-button:hover {
@@ -718,6 +866,10 @@ text-align: left;
     padding: 40px;
     background:#FF6D2C; /* Light background */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.postpilot-div{
+    width: 50%;
 }
 
 .postpilot-title {
@@ -739,9 +891,9 @@ line-height: 96px;
 
 .button-container {
     display: flex;
-    justify-content: center; /* Center the button and rating */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Space between button and rating */
+    justify-content: center; 
+    align-items: center; 
+    /* gap:0px;  */
 }
 
 .get-started-button {
@@ -759,6 +911,7 @@ line-height: 96px;
     line-height: 20px;
     letter-spacing: 1.2000000476837158px;
     text-align: center;
+    margin-right: 150px;
 
 }
 
@@ -769,7 +922,7 @@ line-height: 96px;
 .rating {
     display: flex;
     flex-direction: column; /* Stack the rating elements vertically */
-    align-items: center; /* Center align */
+    align-items: center; 
 }
 
 .stars {
@@ -856,3 +1009,32 @@ line-height: 96px;
         padding-top: 80px;
     }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-description{
+    width: 50%;
+}
+
+.trends-section-lists{
+    width: 450px;
+    margin-top: 100px;
+    margin-right:80px;
+    list-style: none;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #2E2F35;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+}
